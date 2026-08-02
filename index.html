@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Spintax Studio is a native Windows editor for writing, validating, previewing and exporting spintax templates offline.">
+  <meta property="og:title" content="Spintax Studio">
+  <meta property="og:description" content="Write one controlled template. Inspect what it means. Generate distinct variants locally.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spintax.studio/">
+  <meta property="og:image" content="https://spintax.studio/assets/editor-preview.jpg">
+  <title>Spintax Studio - Native Windows editor for spintax</title>
+  <link rel="icon" href="assets/spintax-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="./" aria-label="Spintax Studio home">
+        <img src="assets/spintax-mark.svg" alt="" width="34" height="34">
+        <span>Spintax Studio</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#product">Product</a>
+        <a href="#workflow">How it works</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <a class="nav-cta" href="https://apps.microsoft.com/detail/9MW3CH7B530P" target="_blank" rel="noopener">Microsoft Store</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Native Windows editor / R0 release</p>
+        <h1>Spintax Studio</h1>
+        <p class="hero-lede">Write one controlled template. Inspect what it means. Generate distinct variants locally.</p>
+        <p class="hero-body">A focused workspace for authors who need their template language, rendered result and diagnostics in view at the same time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://apps.microsoft.com/detail/9MW3CH7B530P" target="_blank" rel="noopener">Get it from Microsoft Store</a>
+          <a class="button button-secondary" href="#product">Explore the workflow</a>
+        </div>
+        <ul class="facts" aria-label="Release facts">
+          <li>Windows x64</li>
+          <li>Works offline</li>
+          <li>No account required</li>
+        </ul>
+      </div>
+      <figure class="product-shot">
+        <div class="shot-bar"><span></span><span></span><span></span><strong>Spintax Studio</strong></div>
+        <img src="assets/editor-preview.jpg" alt="Spintax Studio showing a template editor beside its rendered page preview" width="1102" height="752">
+        <figcaption>Template, live preview and source diagnostics in one window.</figcaption>
+      </figure>
+    </section>
+
+    <section id="product" class="section section-light">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow">A readable authoring loop</p>
+          <h2>Every decision stays visible.</h2>
+          <p>Spintax Studio is built around the moment an author changes a template and needs to know what happened next.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-row">
+            <div class="feature-index">01</div>
+            <div>
+              <h3>Write with the language</h3>
+              <p>Bracket matching, syntax colours and a fixed-pitch editor keep alternatives, variables, conditions and directives easy to scan.</p>
+            </div>
+          </article>
+          <article class="feature-row">
+            <div class="feature-index">02</div>
+            <div>
+              <h3>See the result immediately</h3>
+              <p>The preview is rendered by the same engine used across the Spintax family. What you see is not a second parser's approximation.</p>
+            </div>
+          </article>
+          <article class="feature-row">
+            <div class="feature-index">03</div>
+            <div>
+              <h3>Fix the cause, not the symptom</h3>
+              <p>Diagnostics point to the source position, explain the rule and connect to built-in help with measured examples.</p>
+            </div>
+          </article>
+          <article class="feature-row">
+            <div class="feature-index">04</div>
+            <div>
+              <h3>Generate and export locally</h3>
+              <p>Inspect variables and includes, edit groups, generate seeded variants and export the result without a runtime or network service.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section section-dark">
+      <div class="shell workflow-grid">
+        <div>
+          <p class="eyebrow">The workflow</p>
+          <h2>From source to a checked result.</h2>
+        </div>
+        <ol class="workflow-steps">
+          <li><span>01</span><div><strong>Author</strong><p>Compose the choices and rules that define your content.</p></div></li>
+          <li><span>02</span><div><strong>Validate</strong><p>Follow a diagnostic to the exact bracket, directive or definition.</p></div></li>
+          <li><span>03</span><div><strong>Preview</strong><p>Read the rendered page or inspect the generated source.</p></div></li>
+          <li><span>04</span><div><strong>Export</strong><p>Generate deterministic variants and take the files where they belong.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="shell release-grid">
+        <div>
+          <p class="eyebrow">R0 release</p>
+          <h2>Local by design.</h2>
+        </div>
+        <div class="release-copy">
+          <p>Spintax Studio does not require an account, a model key or a connection. Documents stay on your computer and the editor does not include generative AI in this release.</p>
+          <a class="text-link" href="privacy.html">Read the full privacy policy <span aria-hidden="true">-&gt;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light family-section">
+      <div class="shell family-grid">
+        <div>
+          <p class="eyebrow">One language family</p>
+          <h2>Built on a shared engine.</h2>
+        </div>
+        <div>
+          <p>The editor consumes the open-source Spintax engine used by the JavaScript, PHP and Python implementations. One corpus keeps the language behaviour aligned across deployments.</p>
+          <a class="text-link" href="https://github.com/investblog/spintax-win" target="_blank" rel="noopener">See the engine on GitHub <span aria-hidden="true">-&gt;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-wrap">
+      <div class="brand footer-brand"><img src="assets/spintax-mark.svg" alt="" width="28" height="28"><span>Spintax Studio</span></div>
+      <p>Native Windows editor for spintax templates.</p>
+      <div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="mailto:support@301.st">Support</a><a href="https://github.com/investblog/spintax-studio" target="_blank" rel="noopener">Source</a></div>
+    </div>
+  </footer>
+</body>
+</html>
