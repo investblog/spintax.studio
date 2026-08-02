@@ -195,6 +195,7 @@ html[data-theme="light"] .site-header { background: rgba(245,245,245,.94); borde
 .button-ghost { background: transparent; border-color: rgba(128,128,128,.5); color: var(--ink); }
 .button-ghost:hover, .button-ghost:focus-visible { background: var(--white); border-color: rgba(128,128,128,.75); color: var(--ink); }
 .hero { min-height: auto; background: var(--dark); color: #f5f5f5; }
+.hero.shell { max-width: none; padding-inline: 0; }
 .hero-grid { min-height: 700px; padding-top: 6rem; padding-bottom: 6rem; }
 .eyebrow { color: var(--blue); font-size: .75rem; font-weight: 700; letter-spacing: .08em; }
 .hero h1 { font-family: var(--font-display); font-size: clamp(2.7rem,5vw,4.6rem); font-weight: 700; letter-spacing: -.02em; }
