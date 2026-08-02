@@ -2,7 +2,7 @@
   const root = document.documentElement;
   let themeToggle = document.getElementById('theme-toggle');
   const mobileToggle = document.getElementById('mobile-toggle');
-  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNav = document.getElementById('mobile-nav') || document.querySelector('.site-header nav');
 
   if (!themeToggle) {
     const navWrap = document.querySelector('.nav-wrap');
@@ -33,11 +33,13 @@
   mobileToggle?.addEventListener('click', () => {
     const isOpen = mobileNav?.classList.toggle('is-open') ?? false;
     mobileToggle.setAttribute('aria-expanded', String(isOpen));
+    mobileToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
   mobileNav?.addEventListener('click', (event) => {
     if (event.target instanceof HTMLElement && event.target.tagName === 'A') {
       mobileNav.classList.remove('is-open');
       mobileToggle?.setAttribute('aria-expanded', 'false');
+      mobileToggle?.setAttribute('aria-label', 'Open menu');
     }
   });
   applyTheme(root.dataset.theme === 'light' ? 'light' : 'dark');

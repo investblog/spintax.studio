@@ -21,22 +21,23 @@
         <img src="assets/spintax-mark.svg" alt="" width="34" height="34">
         <span>Spintax Studio</span>
       </a>
-      <nav aria-label="Primary navigation">
+      <nav id="site-nav" aria-label="Primary navigation">
         <a href="#product">Product</a>
         <a href="#workflow">How it works</a>
         <a href="privacy.html">Privacy</a>
       </nav>
-      <a class="nav-cta" href="https://apps.microsoft.com/detail/9MW3CH7B530P" target="_blank" rel="noopener">Microsoft Store</a>
+      <button class="icon-button mobile-toggle" id="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Native Windows editor / R0 release</p>
-        <h1>Spintax Studio</h1>
-        <p class="hero-lede">Write one controlled template. Inspect what it means. Generate distinct variants locally.</p>
-        <p class="hero-body">A focused workspace for authors who need their template language, rendered result and diagnostics in view at the same time.</p>
+    <section class="hero">
+      <div class="shell hero-inner">
+        <p class="hero-badge"><span class="badge">Native Windows editor / R0 release</span></p>
+        <h1>Write one controlled template.</h1>
+        <p class="hero-lede">Inspect what it means. Generate distinct variants locally.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="https://apps.microsoft.com/detail/9MW3CH7B530P" target="_blank" rel="noopener">Get it from Microsoft Store</a>
           <a class="button button-secondary" href="#product">Explore the workflow</a>
@@ -47,17 +48,27 @@
           <li>No account required</li>
         </ul>
       </div>
-      <figure class="product-shot">
-        <div class="shot-bar"><span></span><span></span><span></span><strong>Spintax Studio</strong></div>
-        <img src="assets/editor-preview.jpg" alt="Spintax Studio showing a template editor beside its rendered page preview" width="1102" height="752">
-        <figcaption>Template, live preview and source diagnostics in one window.</figcaption>
-      </figure>
     </section>
 
-    <section id="product" class="section section-light">
+    <section id="product" class="section section-product">
       <div class="shell">
         <div class="section-intro">
           <p class="eyebrow">A readable authoring loop</p>
+          <h2>Everything stays visible.</h2>
+          <p>Template, rendered result and diagnostics share one focused workspace.</p>
+        </div>
+        <figure class="product-shot product-shot-wide">
+          <div class="shot-bar"><span></span><span></span><span></span><strong>Spintax Studio</strong></div>
+          <img src="assets/editor-preview.jpg" alt="Spintax Studio showing a template editor beside its rendered page preview" width="1102" height="752">
+          <figcaption>Template, live preview and source diagnostics in one window.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="shell">
+        <div class="section-intro section-intro-left">
+          <p class="eyebrow">The product</p>
           <h2>Every decision stays visible.</h2>
           <p>Spintax Studio is built around the moment an author changes a template and needs to know what happened next.</p>
         </div>
@@ -94,6 +105,7 @@
       </div>
     </section>
 
+    <!-- The workflow follows the product surface, so the hero remains focused. -->
     <section id="workflow" class="section section-dark">
       <div class="shell workflow-grid">
         <div>
@@ -140,7 +152,7 @@
     <div class="shell footer-wrap">
       <div class="brand footer-brand"><img src="assets/spintax-mark.svg" alt="" width="28" height="28"><span>Spintax Studio</span></div>
       <p>Native Windows editor for spintax templates.</p>
-      <div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="mailto:support@301.st">Support</a><a href="https://github.com/investblog/spintax-studio" target="_blank" rel="noopener">Source</a></div>
+      <div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="https://301.st/contact" target="_blank" rel="noopener">Contact</a><a href="https://github.com/investblog/spintax-studio" target="_blank" rel="noopener">Source</a></div>
     </div>
   </footer>
   <script src="site.js" defer></script>
