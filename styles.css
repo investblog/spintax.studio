@@ -246,8 +246,9 @@ figcaption { color: #9c9c9c; }
 @media (max-width: 767px) {
   .desktop-nav { display: none; }
   .mobile-toggle { display: inline-flex; }
-  .nav-wrap { flex-wrap: nowrap; }
-  .nav-cta { margin-left: auto; }
+  .nav-wrap { flex-wrap: wrap; padding-inline: 1rem; }
+  .nav-cta { display: none; }
+  .site-header nav { order: 3; width: 100%; margin: 0; padding-top: .5rem; border-top: 1px solid var(--line); gap: .25rem; }
   .site-header { padding: 0; }
   .feature-list { grid-template-columns: 1fr; }
   .hero { grid-template-columns: 1fr; gap: 2rem; padding-block: 3rem 4rem; }
