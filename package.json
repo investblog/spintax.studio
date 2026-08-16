@@ -1,0 +1,17 @@
+{
+  "name": "spintax-studio-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-docs-links.mjs && tsc --noEmit",
+    "build": "tsx src/build.ts && node scripts/build-og.mjs && node scripts/build-shots.mjs && node scripts/build-sitemap.mjs && node scripts/check-dist-links.mjs",
+    "serve": "npx serve dist",
+    "indexnow": "node scripts/indexnow.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "sharp": "^0.35.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  }
+}
