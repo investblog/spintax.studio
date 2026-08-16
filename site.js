@@ -6,6 +6,7 @@
 
   if (!themeToggle) {
     const navWrap = document.querySelector('.nav-wrap');
+    if (!navWrap) return;  // legal pages have no header nav; nothing to install the toggle into
     const storeLink = navWrap?.querySelector('.nav-cta');
     if (navWrap) {
       themeToggle = document.createElement('button');
