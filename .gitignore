@@ -1,0 +1,25 @@
+# Local working files, not part of the published site
+AGENTS.md
+CLAUDE.md
+.agents/
+.claude/
+.codex/
+
+# Secrets — a secret must never be committable
+.env
+.env.*
+!.env.example
+.dev.vars
+.secrets
+*.pem
+id_rsa
+id_ed25519
+
+# Dependencies and build output
+node_modules/
+dist/
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
