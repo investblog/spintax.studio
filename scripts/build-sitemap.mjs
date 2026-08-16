@@ -11,6 +11,8 @@ const ORIGIN = 'https://spintax.studio';
 const PAGES = [
   ['/', ['src/templates/index.ts', 'src/templates/layout.ts', 'src/meta.ts']],
   ['/privacy.html', ['privacy.html']],
+  ['/ecosystem.html', ['content/ecosystem.md', 'src/templates/prose.ts', 'src/templates/layout.ts', 'src/md.ts', 'src/meta.ts']],
+  ['/ai.html', ['content/ai.md', 'src/templates/prose.ts', 'src/templates/layout.ts', 'src/md.ts', 'src/meta.ts']],
 ];
 
 function lastmod(sources) {

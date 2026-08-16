@@ -10,7 +10,7 @@ const THEME_BOOT = `(function(){try{var t=localStorage.getItem('spintax-theme');
   `if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}` +
   `document.documentElement.dataset.theme=t;}catch(e){}})();`;
 
-export function layout(meta: PageMeta, body: string, extraNav = ''): string {
+export function layout(meta: PageMeta, body: string): string {
   const url = canonical(meta.slug);
   const cur = (k: string) => (meta.nav === k ? ' aria-current="page"' : '');
   return `<!doctype html>
@@ -45,7 +45,9 @@ export function layout(meta: PageMeta, body: string, extraNav = ''): string {
       </a>
       <nav id="site-nav" aria-label="Primary navigation">
         <a href="/#product"${cur('product')}>Product</a>
-        <a href="/#workflow">How it works</a>${extraNav}
+        <a href="/#workflow">How it works</a>
+        <a href="/ecosystem.html"${cur('ecosystem')}>Ecosystem</a>
+        <a href="/ai.html"${cur('ai')}>AI</a>
         <a href="/privacy.html"${cur('privacy')}>Privacy</a>
       </nav>
       <button class="icon-button mobile-toggle" id="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
