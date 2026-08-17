@@ -2,17 +2,22 @@
 
 Decisions live in [`decisions/`](decisions/).
 
-## In flight (the revamp plan, 2026-08-16)
+## The 2026-08-16 revamp — SHIPPED, three releases the same day
 
-- [x] Privacy republish — shipped 2026-08-16: the site now carries the
-      14-August policy that describes the optional AI connection (the Store's
-      own privacy copy had carried it since the 0.2.0.0 submission; the site
-      copy was the laggard).
-- [ ] tsx generator + 301.sh build-layer port (checkers, og.png, sitemap,
-      llms.txt + md mirrors, IndexNow); `pages.yml` flips to `dist/`.
-- [ ] Landing rewritten for 0.2.0.0 (the live page still claims "does not
-      include generative AI in this release").
-- [ ] `ecosystem` + `ai` pages.
+- [x] Privacy republish — the site carries the 14-August policy that describes
+      the optional AI connection (the Store's own privacy copy had carried it
+      since the 0.2.0.0 submission; the site copy was the laggard).
+- [x] tsx generator + build-layer port (docs and dist link checkers, textless
+      og.png + favicon set, git-dated sitemap with XSL, llms.txt, IndexNow);
+      `pages.yml` builds and deploys `dist/`. Two old defects died in passing:
+      the theme choice is restored from localStorage, and 404 got the site
+      chrome.
+- [x] Landing rewritten for 0.2.0.0 — the "does not include generative AI"
+      claim is gone; the AI section is worded from the proofread Store listing,
+      with capture-kit screenshots as lossless WebP.
+- [x] `ecosystem` + `ai` pages, rendered from `content/*.md`; the Markdown
+      ships verbatim as agent-facing mirrors (llms.txt lists them, robots.txt
+      disallows them — no X-Robots-Tag on Pages).
 
 ## Later, deliberately not now
 
