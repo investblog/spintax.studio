@@ -6,13 +6,13 @@
 		<MASTER_PAD_INFO>Portable Application Description, generated from docs/pad-listing.md</MASTER_PAD_INFO>
 	</MASTER_PAD_VERSION_INFO>
 	<Company_Info>
-		<Company_Name>301.st</Company_Name>
-		<Address_1 />
+		<Company_Name>310ST Ltd</Company_Name>
+		<Address_1>124 City Road</Address_1>
 		<Address_2 />
-		<City_Town />
+		<City_Town>London</City_Town>
 		<State_Province />
-		<Zip_Postal_Code />
-		<Country />
+		<Zip_Postal_Code>EC1V 2NX</Zip_Postal_Code>
+		<Country>United Kingdom</Country>
 		<Company_WebSite_URL>https://301.st/</Company_WebSite_URL>
 	</Company_Info>
 	<Support_Info>
