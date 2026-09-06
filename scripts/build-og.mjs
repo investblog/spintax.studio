@@ -27,8 +27,14 @@ await sharp({ create: { width: 1200, height: 630, channels: 4, background: BG } 
   .png()
   .toFile('dist/assets/og.png');
 
-// Favicon PNGs from the same mark.
-for (const [size, name] of [[96, 'favicon-96x96.png'], [180, 'apple-touch-icon.png']]) {
+// Favicon PNGs from the same mark, plus the catalogue icon.
+//
+// icon-512 exists for the software portals, which ask for a square icon and set a floor:
+// SoftPortal's own form says "размер не менее 512х512 точек", and the largest square we had
+// was the 180 apple-touch icon (the 512 in assets/brand is the wordmark, 512x228, not a
+// square). It is the same mark at the same command as the favicons rather than a hand-made
+// file, so it cannot drift from the brand or from itself.
+for (const [size, name] of [[96, 'favicon-96x96.png'], [180, 'apple-touch-icon.png'], [512, 'icon-512.png']]) {
   await sharp(mark).resize(size, size).png().toFile(`dist/assets/${name}`);
 }
-console.log('brand assets: og.png 1200x630, favicon-96, apple-touch-icon');
+console.log('brand assets: og.png 1200x630, favicon-96, apple-touch-icon, icon-512');
