@@ -34,6 +34,7 @@ export function layout(meta: PageMeta, body: string): string {
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <script>${THEME_BOOT}</script>
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VLio5zwcXhoqUpKRCiGNeQ" async></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
