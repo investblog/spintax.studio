@@ -22,9 +22,9 @@
 	</Support_Info>
 	<Program_Info>
 		<Program_Name>Spintax Studio</Program_Name>
-		<Program_Version>0.2.2.0</Program_Version>
-		<Program_Release_Month>08</Program_Release_Month>
-		<Program_Release_Day>20</Program_Release_Day>
+		<Program_Version>0.2.3.0</Program_Version>
+		<Program_Release_Month>10</Program_Release_Month>
+		<Program_Release_Day>04</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
 		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Type>Freeware</Program_Type>
@@ -32,15 +32,15 @@
 		<Program_Install_Support>No Install Support</Program_Install_Support>
 		<Program_OS_Support>Win10,Win11</Program_OS_Support>
 		<Program_Language>English,Russian,Ukrainian,Belarusian,Serbian,Croatian,Bosnian,German,French,Spanish,Italian,Portuguese,Dutch,Turkish</Program_Language>
-		<Program_Change_Info>The diagnostics panel answers at once on templates whose definitions refer to each other in a circle, and reports one finding per name. Importing a large GSA template no longer freezes the window. Two plural findings were wrong and are right. Engine updated to v0.8.0.</Program_Change_Info>
+		<Program_Change_Info>A value carrying a | inside a choice or a shuffle becomes several options. A seed can give a different variant than 0.2.2 did. The tidy-up reads every alphabet and no longer spaces ? ! . before a closing quote. The variant count is right in more cases. GSA import is faster. Engine v0.11.1.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::Text/Document Editors</Program_Category_Class>
 		<Program_System_Requirements>Windows 10 version 1809 or later, x64. No runtime to install: one self-contained executable.</Program_System_Requirements>
 	</Program_Info>
 	<File_Info>
-		<File_Size_Bytes>2993373</File_Size_Bytes>
-		<File_Size_K>2923</File_Size_K>
-		<File_Size_MB>2.85</File_Size_MB>
+		<File_Size_Bytes>3087204</File_Size_Bytes>
+		<File_Size_K>3015</File_Size_K>
+		<File_Size_MB>2.94</File_Size_MB>
 	</File_Info>
 	<Program_Descriptions>
 		<English>
@@ -85,7 +85,7 @@ Interface and built-in help in 14 languages. Free and open source, GPL-3.0-or-la
 			<Application_XML_File_URL>https://spintax.studio/pad.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/investblog/spintax-studio/releases/download/v0.2.2.0/spintax-studio-0.2.2.0-win64-portable.zip</Primary_Download_URL>
+			<Primary_Download_URL>https://github.com/investblog/spintax-studio/releases/download/v0.2.3.0/spintax-studio-0.2.3.0-win64-portable.zip</Primary_Download_URL>
 			<Secondary_Download_URL>https://sourceforge.net/projects/spintax/files/latest/download</Secondary_Download_URL>
 		</Download_URLs>
 	</Web_Info>
